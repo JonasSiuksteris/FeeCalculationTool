@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Payment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RuleEvaluator.cs" />
+    <Compile Include="Rules\FixedMonthlyFee.cs" />
+    <Compile Include="Rules\IRule.cs" />
+    <Compile Include="Rules\TransactionFeeDiscount.cs" />
+    <Compile Include="Rules\TransactionPercentageFee.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
