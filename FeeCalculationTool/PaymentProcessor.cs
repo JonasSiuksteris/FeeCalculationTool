@@ -7,6 +7,8 @@ namespace FeeCalculationTool
     {
         public RuleEvaluator RuleEvaluator { get; set; }
 
+        /// <summary>Initializes a new instance of the <see cref="T:PaymentProcessor" /> class for the specified file name.</summary>
+        /// <param name="ruleEvaluator">Instance of ruleEvaluator</param>
         public PaymentProcessor(RuleEvaluator ruleEvaluator)
         {
             RuleEvaluator = ruleEvaluator;
